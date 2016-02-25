@@ -31,6 +31,9 @@
         <activity android:name=".KeyTest"
             android:label="Key Test"
             android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".AccelerometerTest"
+            android:label="Accelerometer Test"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
