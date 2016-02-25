@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paraonensk.tests"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal">
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="AndroidBasicStarter">
+        <activity android:name=".AndroidStarter"
+            android:label="AndroidBasicStarter"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:label="Life Cycle Test"
+            android:name=".LifeCycleTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:label="Single Touch Test"
+            android:name=".SingleTouchTest"
+            android:configChanges="keyboardHidden|keyboard|orientation"/>
+        <activity android:name=".MultiTouchTest"
+            android:label="Multi Touch Test"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".KeyTest"
+            android:label="Key Test"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="23"/>
+
+</manifest>
